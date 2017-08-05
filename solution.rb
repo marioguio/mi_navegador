@@ -1,5 +1,4 @@
 require 'sinatra'
-require "browser"
 
 get '/' do
   if request.user_agent
