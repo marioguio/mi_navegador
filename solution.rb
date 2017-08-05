@@ -2,6 +2,7 @@ require 'sinatra'
 require "browser"
 
 get '/' do
-   request.user_agent
-   "#{request.user_agent}"
+  if request.user_agent
+    "#{request.user_agent}"
+  end
 end
